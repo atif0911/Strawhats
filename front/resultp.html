@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Health Analysis Results</title>
+    <link rel="stylesheet" href="styleres.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <div class="container2">
+            <div class="logo">
+                <img src="logo.jpg" alt="Logo" class="logo-img">
+                <h1>Crop Health Analysis</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="upl.html"><i class="fas fa-upload"></i> Upload Image</a></li>
+                    <li><a href="weather.html"><i class="fas fa-cloud-sun-rain"></i> Weather Updates</a></li>
+                    <li><a href="resultp.html"><i class="fas fa-chart-line"></i> Results</a></li>
+                    <li><a href="market.html"><i class="fas fa-store"></i> Market</a></li>
+                    <li><a href="chatbox.html"><i class="fas fa-comments"></i> Chatbox</a></li>
+                    <li><a href="#"><i class="fas fa-info-circle"></i> About Us</a></li>
+                    <li><a href="#"><i class="fas fa-phone-alt rotate-icon"></i> Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="analysis-summary" class="section">
+            <div class="container">
+                <h2>Crop Health Analysis Result</h2>
+                <div id="result-summary">
+                    <p><strong>Disease Detected:</strong> <span id="disease-name"></span></p>
+                    <p><strong>Crop Health Status:</strong> <span id="health-status"></span></p>
+                    <p><strong>Confidence Score:</strong> <span id="confidence-score"></span></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="disease-details" class="section">
+            <div class="container">
+                <h2>Disease Details and Recommendations</h2>
+                <p><strong>Disease Name:</strong> <span id="disease-name-detail"></span></p>
+                <p><strong>Symptoms:</strong> <span id="symptoms"></span></p>
+                <p><strong>Treatment Steps:</strong></p>
+                <ol id="treatment-steps"></ol>
+            </div>
+        </section>
+
+        <section id="weather-impact" class="section">
+            <div class="container">
+                <h2>Weather Impact</h2>
+                <p><strong>Current Weather:</strong> <span id="current-weather"></span></p>
+                <p><strong>3-Day Forecast:</strong></p>
+                <ul id="forecast"></ul>
+                <p><strong>Advice:</strong> <span id="weather-advice"></span></p>
+            </div>
+        </section>
+
+        <section id="preventive-tips" class="section">
+            <div class="container">
+                <h2>Preventive Tips and Crop Rotation</h2>
+                <ul id="preventive-tips-list"></ul>
+                <p><strong>Crop Rotation Suggestion:</strong> <span id="crop-rotation"></span></p>
+            </div>
+        </section>
+
+        <section id="related-products" class="section">
+            <div class="container">
+                <h2>Related Products</h2>
+                <ul id="products-list"></ul>
+            </div>
+        </section>
+
+        <section id="chatbot" class="section">
+            <div class="container">
+                <h2>Need More Help?</h2>
+                <a href="chatbox.html"><button id="chat-button">Chat with us!</button></a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container2">
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Contact Us</a>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <div class="contact-info">
+                <p>Email: support@cropapp.com | Phone: +123-456-7890</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="result.js"></script>
+</body>
+</html>
+
