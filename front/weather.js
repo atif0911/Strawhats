@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function fetchWeather(city) {
         // First, get latitude and longitude of the city
-        fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`)
+        fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`)
             .then(response => {
                 if (!response.ok) {
                     throw new Error('City not found. Please enter a valid city name.');

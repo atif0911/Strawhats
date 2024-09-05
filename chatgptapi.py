@@ -1,8 +1,9 @@
 import openai
-
+import os
+from dotenv import load_dotenv
 # Initialize the OpenAI API client
-openai.api_key = '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'  # Replace with your API key
-
+load_dotenv()
+openai.api_key =os.getenv('OPENAI_API_KEY')
 def chat_with_gpt(prompt):
     response = openai.Completion.create(
         engine="gpt-3.5-turbo",  # Use "gpt-3.5-turbo" for GPT-3.5

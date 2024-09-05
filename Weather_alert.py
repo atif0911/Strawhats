@@ -1,6 +1,9 @@
+import os
 import requests
+from dotenv import load_dotenv
 city = input("Enter the city: ")
-api_key = "4c471e653c52db4ee5215a38a0fa192b"
+load_dotenv()
+api_key=os.getenv('API_KEY')
 url = f"https://api.weatherstack.com/current?access_key={api_key}"
 querystring = {"query":city}
 response = requests.get(url, params=querystring)
